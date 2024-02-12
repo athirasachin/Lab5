@@ -1,24 +1,563 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wpf-mv-uHU">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="mzQ-sJ-lBD">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="Wpf-mv-uHU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hqQ-Aq-0wf">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="M5W-Uh-hWV" kind="relationship" relationship="rootViewController" id="jC3-oF-JlC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2i-zr-3Hp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-613" y="154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="reO-0A-zMJ">
+            <objects>
+                <viewController id="nwE-Hz-V4w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eld-n2-KHT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="children" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-K5-nbj">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Grandmma Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-gg-m8T">
+                                <rect key="frame" x="15" y="106" width="345" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.88144329899999996" green="0.1683377533" blue="0.30963555300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3OB-aw-ZhC">
+                                <rect key="frame" x="15" y="145" width="345" height="618"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">About UsAt Grandmma Stories, we believe in the magic of storytelling and its power to ignite young imaginations. Our mission is to provide a safe and enriching space where children can embark on exciting adventures, explore diverse worlds, and learn valuable life lessons through the joy of reading.Our StorytellersOur team of dedicated storytellers is passionate about crafting captivating tales that spark curiosity and inspire creativity. From whimsical fairy tales to thrilling adventures, each story is carefully written and beautifully illustrated to engage young readers and foster a love for storytelling.Story CategoriesExplore our wide range of story categories tailored to suit every child's interests:   Fairy Tales: Dive into a world of enchantment and wonder with classic fairy tales filled with magic and adventure.   Animal Tales: Journey into the animal kingdom and discover heartwarming stories featuring furry friends of all shapes and sizes.   Moral Lessons: Delve into stories that teach important life lessons on friendship, kindness, bravery, and more. Contact Us   Have a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us at grandmmastories@info.com and our team will be happy to assist you.          </mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Lq-Yb-ez8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vJZ-K5-nbj" firstAttribute="top" secondItem="1Lq-Yb-ez8" secondAttribute="top" id="6ah-dV-8vx"/>
+                            <constraint firstItem="7T7-gg-m8T" firstAttribute="top" secondItem="1Lq-Yb-ez8" secondAttribute="top" constant="15" id="E9B-CD-dBt"/>
+                            <constraint firstItem="vJZ-K5-nbj" firstAttribute="leading" secondItem="1Lq-Yb-ez8" secondAttribute="leading" id="EZq-tl-xgT"/>
+                            <constraint firstItem="1Lq-Yb-ez8" firstAttribute="trailing" secondItem="3OB-aw-ZhC" secondAttribute="trailing" constant="15" id="Psa-rZ-g27"/>
+                            <constraint firstItem="3OB-aw-ZhC" firstAttribute="leading" secondItem="1Lq-Yb-ez8" secondAttribute="leading" constant="15" id="VZ1-V5-eNr"/>
+                            <constraint firstItem="1Lq-Yb-ez8" firstAttribute="bottom" secondItem="3OB-aw-ZhC" secondAttribute="bottom" constant="15" id="aci-BT-iaK"/>
+                            <constraint firstItem="1Lq-Yb-ez8" firstAttribute="trailing" secondItem="7T7-gg-m8T" secondAttribute="trailing" constant="15" id="iDx-ZT-peG"/>
+                            <constraint firstItem="3OB-aw-ZhC" firstAttribute="top" secondItem="7T7-gg-m8T" secondAttribute="bottom" constant="15" id="lmP-dc-PKE"/>
+                            <constraint firstItem="1Lq-Yb-ez8" firstAttribute="bottom" secondItem="vJZ-K5-nbj" secondAttribute="bottom" id="nsx-Ma-VD7"/>
+                            <constraint firstItem="1Lq-Yb-ez8" firstAttribute="trailing" secondItem="vJZ-K5-nbj" secondAttribute="trailing" id="vw0-6Y-PlL"/>
+                            <constraint firstItem="7T7-gg-m8T" firstAttribute="leading" secondItem="1Lq-Yb-ez8" secondAttribute="leading" constant="15" id="xnK-ik-clJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aqn-G0-Kri"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Er-Tn-bxO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="968.7192118226601"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y6b-ar-QKp">
+            <objects>
+                <viewController id="M5W-Uh-hWV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HfW-RA-FFz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grandma image" translatesAutoresizingMaskIntoConstraints="NO" id="Wwy-g0-zAa">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grandmma Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuE-3t-PU5">
+                                <rect key="frame" x="15" y="106" width="345" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.71649484536082475" green="0.17700623830356774" blue="0.14848467245033892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iza-dt-eFh">
+                                <rect key="frame" x="100" y="242" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jAH-zG-oDh"/>
+                                </constraints>
+                                <color key="tintColor" red="0.88144329896907214" green="0.16833775333762027" blue="0.30963555297386458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 1">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="44y-gO-8CD" kind="show" id="G02-Zc-nMS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="975-9d-9ab">
+                                <rect key="frame" x="100" y="393" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cAl-lF-5Vt"/>
+                                </constraints>
+                                <color key="tintColor" red="0.88144329899999996" green="0.1683377533" blue="0.30963555300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 2">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gRd-47-pid" kind="show" id="fyW-Hx-Icu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJQ-qX-BAV">
+                                <rect key="frame" x="325.33333333333331" y="743" width="49.666666666666686" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="nwE-Hz-V4w" kind="show" id="tp5-HK-Ead"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Gb-3O-cHM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Gb-3O-cHM" firstAttribute="trailing" secondItem="iza-dt-eFh" secondAttribute="trailing" constant="100" id="0Fo-2N-L3N"/>
+                            <constraint firstItem="2Gb-3O-cHM" firstAttribute="trailing" secondItem="TJQ-qX-BAV" secondAttribute="trailing" id="0RI-5h-akl"/>
+                            <constraint firstItem="2Gb-3O-cHM" firstAttribute="trailing" secondItem="975-9d-9ab" secondAttribute="trailing" constant="100" id="2bs-OP-WHx"/>
+                            <constraint firstItem="2Gb-3O-cHM" firstAttribute="bottom" secondItem="TJQ-qX-BAV" secondAttribute="bottom" id="7dM-KP-4iF"/>
+                            <constraint firstItem="2Gb-3O-cHM" firstAttribute="trailing" secondItem="EuE-3t-PU5" secondAttribute="trailing" constant="15" id="DaB-bU-GUB"/>
+                            <constraint firstItem="2Gb-3O-cHM" firstAttribute="bottom" secondItem="Wwy-g0-zAa" secondAttribute="bottom" id="HXK-n8-8cw"/>
+                            <constraint firstItem="2Gb-3O-cHM" firstAttribute="trailing" secondItem="Wwy-g0-zAa" secondAttribute="trailing" id="I2e-lB-M65"/>
+                            <constraint firstItem="iza-dt-eFh" firstAttribute="leading" secondItem="2Gb-3O-cHM" secondAttribute="leading" constant="100" id="IP0-CJ-hOv"/>
+                            <constraint firstItem="Wwy-g0-zAa" firstAttribute="top" secondItem="2Gb-3O-cHM" secondAttribute="top" id="R2Q-tI-CUc"/>
+                            <constraint firstItem="975-9d-9ab" firstAttribute="top" secondItem="iza-dt-eFh" secondAttribute="bottom" constant="100" id="Uzq-tb-xls"/>
+                            <constraint firstItem="EuE-3t-PU5" firstAttribute="leading" secondItem="2Gb-3O-cHM" secondAttribute="leading" constant="15" id="XvG-kY-uAd"/>
+                            <constraint firstItem="EuE-3t-PU5" firstAttribute="top" secondItem="2Gb-3O-cHM" secondAttribute="top" constant="15" id="kbx-Ao-Af0"/>
+                            <constraint firstItem="975-9d-9ab" firstAttribute="leading" secondItem="2Gb-3O-cHM" secondAttribute="leading" constant="100" id="sgf-K9-DbY"/>
+                            <constraint firstItem="Wwy-g0-zAa" firstAttribute="leading" secondItem="2Gb-3O-cHM" secondAttribute="leading" id="tzx-nw-fzA"/>
+                            <constraint firstItem="iza-dt-eFh" firstAttribute="top" secondItem="EuE-3t-PU5" secondAttribute="bottom" constant="100" id="wxg-Fr-xIA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YLN-qW-iKy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7z-pk-XCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M9t-wO-Yf2">
+            <objects>
+                <viewController id="44y-gO-8CD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="91V-za-ye2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="he5-he-in7">
+                                <rect key="frame" x="0.0" y="91" width="375" height="559.66666666666663"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-Ee-RvL">
+                                <rect key="frame" x="100" y="291" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EzU-9u-OrP"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Snow White and the Seven Dwarfs">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nrc-Id-ril" kind="show" id="HDW-ls-lNZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWM-OK-fWX">
+                                <rect key="frame" x="100" y="438" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6ds-N5-C98"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ganesha's Wisdom">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="N3a-aE-Bgr" kind="show" id="cyk-h7-0WS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0zI-y0-SmC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DWM-OK-fWX" firstAttribute="leading" secondItem="0zI-y0-SmC" secondAttribute="leading" constant="100" id="7vB-MT-Cct"/>
+                            <constraint firstItem="he5-he-in7" firstAttribute="top" secondItem="0zI-y0-SmC" secondAttribute="top" id="8rd-dD-1ne"/>
+                            <constraint firstItem="0zI-y0-SmC" firstAttribute="trailing" secondItem="wOO-Ee-RvL" secondAttribute="trailing" constant="100" id="HNw-5i-jjX"/>
+                            <constraint firstItem="0zI-y0-SmC" firstAttribute="bottom" secondItem="DWM-OK-fWX" secondAttribute="bottom" constant="150" id="P6a-8h-5l7"/>
+                            <constraint firstItem="0zI-y0-SmC" firstAttribute="bottom" secondItem="he5-he-in7" secondAttribute="bottom" id="Qpe-cH-e4X"/>
+                            <constraint firstItem="0zI-y0-SmC" firstAttribute="trailing" secondItem="he5-he-in7" secondAttribute="trailing" id="VGJ-9X-Dsf"/>
+                            <constraint firstItem="he5-he-in7" firstAttribute="leading" secondItem="0zI-y0-SmC" secondAttribute="leading" id="iD3-Mn-Js9"/>
+                            <constraint firstItem="0zI-y0-SmC" firstAttribute="trailing" secondItem="DWM-OK-fWX" secondAttribute="trailing" constant="100" id="ixW-8I-AJj"/>
+                            <constraint firstItem="wOO-Ee-RvL" firstAttribute="top" secondItem="0zI-y0-SmC" secondAttribute="top" constant="200" id="joC-X9-cGv"/>
+                            <constraint firstItem="wOO-Ee-RvL" firstAttribute="leading" secondItem="0zI-y0-SmC" secondAttribute="leading" constant="100" id="rRx-sU-nuA"/>
+                            <constraint firstItem="DWM-OK-fWX" firstAttribute="top" secondItem="wOO-Ee-RvL" secondAttribute="bottom" constant="100" id="v50-mp-EPR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hgK-xB-f2F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="clz-Ah-YsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="-178"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JX5-qd-Mnf">
+            <objects>
+                <viewController id="gRd-47-pid" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XIh-6c-s9v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-e5-qRi">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9M-nj-x37">
+                                <rect key="frame" x="41.333333333333343" y="387.66666666666669" width="292.33333333333326" height="37"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The Blind Men and the Elephant">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="OLq-sx-mOU" kind="show" id="fdE-tM-9fj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dhp-S4-HAS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N9M-nj-x37" firstAttribute="centerY" secondItem="XIh-6c-s9v" secondAttribute="centerY" id="Sh5-q5-vSR"/>
+                            <constraint firstItem="dhp-S4-HAS" firstAttribute="bottom" secondItem="QTe-e5-qRi" secondAttribute="bottom" id="b60-9e-fxs"/>
+                            <constraint firstItem="N9M-nj-x37" firstAttribute="centerX" secondItem="XIh-6c-s9v" secondAttribute="centerX" id="e95-Wk-VES"/>
+                            <constraint firstItem="QTe-e5-qRi" firstAttribute="top" secondItem="dhp-S4-HAS" secondAttribute="top" id="n1M-Gr-lJg"/>
+                            <constraint firstItem="dhp-S4-HAS" firstAttribute="trailing" secondItem="QTe-e5-qRi" secondAttribute="trailing" id="nVO-tQ-Gyg"/>
+                            <constraint firstItem="QTe-e5-qRi" firstAttribute="leading" secondItem="dhp-S4-HAS" secondAttribute="leading" id="rcE-hj-Tl3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0M5-92-dEL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdY-Oe-J4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018" y="631"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FcX-Dn-Jor">
+            <objects>
+                <viewController id="OLq-sx-mOU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O7l-OE-pyj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blind-men-elephant" translatesAutoresizingMaskIntoConstraints="NO" id="Gko-AF-14W">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myf-PQ-HfW">
+                                <rect key="frame" x="100" y="728" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ok5-i1-TY9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Read More .."/>
+                                <connections>
+                                    <segue destination="ilj-th-hLm" kind="show" id="ndd-LG-zdg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Blind Men and the Elephant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-Pg-VSk">
+                                <rect key="frame" x="15" y="106" width="345" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.54123711340000003" green="0.13370974839999999" blue="0.1121646806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="l4k-fR-530">
+                                <rect key="frame" x="15" y="145" width="345" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">     Long ago six old men lived in a village in India. Each was born blind. The other villagers loved the old men and kept them away from harm. Since the blind men could not see the world for themselves, they had to imagine many of its wonders. They listened carefully to the stories told by travelers to learn what they could about life outside the village.
+     The men were curious about many of the stories they heard, but they were most curious about elephants. They were told that elephants could trample forests, carry huge burdens, and frighten young and old with their loud trumpet calls. But they also knew that the Rajah's daughter rode an elephant when she traveled in her father's kingdom. Would the Rajah let his daughter get near such a dangerous creature?
+     The old men argued day and night about elephants. "An elephant must be a powerful giant," claimed the first blind man. He had heard stories about elephants being used to clear forests and build roads.
+     "No, you must be wrong," argued the second blind man. "An elephant must be graceful and gentle if a princess is to ride on its back."
+"You're wrong! I have heard that an elephant can pierce a man's heart with its terrible horn," said the third blind man.
+     "Please," said the fourth blind man. "You are all mistaken. An elephant is nothing more than a large sort of cow. You know how people exaggerate."
+     "I am sure that an elephant is something magical," said the fifth blind man. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yCB-EV-UEU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yCB-EV-UEU" firstAttribute="trailing" secondItem="Gko-AF-14W" secondAttribute="trailing" id="54n-NS-Qew"/>
+                            <constraint firstItem="yCB-EV-UEU" firstAttribute="trailing" secondItem="myf-PQ-HfW" secondAttribute="trailing" constant="100" id="5RE-gA-c1e"/>
+                            <constraint firstItem="l4k-fR-530" firstAttribute="top" secondItem="0Hb-Pg-VSk" secondAttribute="bottom" constant="15" id="B0V-8G-SRR"/>
+                            <constraint firstItem="myf-PQ-HfW" firstAttribute="leading" secondItem="yCB-EV-UEU" secondAttribute="leading" constant="100" id="EPl-8I-Chk"/>
+                            <constraint firstItem="Gko-AF-14W" firstAttribute="leading" secondItem="yCB-EV-UEU" secondAttribute="leading" id="MXr-m9-rtD"/>
+                            <constraint firstItem="yCB-EV-UEU" firstAttribute="trailing" secondItem="l4k-fR-530" secondAttribute="trailing" constant="15" id="PHP-n9-3M9"/>
+                            <constraint firstItem="l4k-fR-530" firstAttribute="leading" secondItem="yCB-EV-UEU" secondAttribute="leading" constant="15" id="TDx-Lj-4jL"/>
+                            <constraint firstItem="Gko-AF-14W" firstAttribute="top" secondItem="yCB-EV-UEU" secondAttribute="top" id="VGf-ot-jNT"/>
+                            <constraint firstItem="yCB-EV-UEU" firstAttribute="bottom" secondItem="myf-PQ-HfW" secondAttribute="bottom" id="ieS-pz-JLx"/>
+                            <constraint firstItem="yCB-EV-UEU" firstAttribute="bottom" secondItem="Gko-AF-14W" secondAttribute="bottom" id="l6z-75-nTu"/>
+                            <constraint firstItem="yCB-EV-UEU" firstAttribute="trailing" secondItem="0Hb-Pg-VSk" secondAttribute="trailing" constant="15" id="n5i-t2-xrI"/>
+                            <constraint firstItem="myf-PQ-HfW" firstAttribute="top" secondItem="l4k-fR-530" secondAttribute="bottom" constant="15" id="nkh-ri-X1C"/>
+                            <constraint firstItem="0Hb-Pg-VSk" firstAttribute="leading" secondItem="yCB-EV-UEU" secondAttribute="leading" constant="15" id="rVP-Hp-qk4"/>
+                            <constraint firstItem="0Hb-Pg-VSk" firstAttribute="top" secondItem="yCB-EV-UEU" secondAttribute="top" constant="15" id="rkV-4b-FcY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RIz-vd-1Ph"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsK-wR-eJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="947.29064039408865"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IzY-Io-YEP">
+            <objects>
+                <viewController id="ilj-th-hLm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6OP-iM-wAi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="7Lr-4e-5lH">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aKG-qf-Ytk">
+                                <rect key="frame" x="15" y="106" width="345" height="657"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">     "That would explain why the Rajah's daughter can travel safely throughout the kingdom."
+     "I don't believe elephants exist at all," declared the sixth blind man. "I think we are the victims of a cruel joke."
+     Finally, the villagers grew tired of all the arguments, and they arranged for the curious men to visit the palace of the Rajah to learn the truth about elephants. A young boy from their village was selected to guide the blind men on their journey. The smallest man put his hand on the boy's shoulder. The second blind man put his hand on his friend's shoulder, and so on until all six men were ready to walk safely behind the boy who would lead them to the Rajah's magnificent palace.
+When the blind men reached the palace, they were greeted by an old friend from their village who worked as a gardener on the palace grounds. Their friend led them to the courtyard. There stood an elephant. The blind men stepped forward to touch the creature that was the subject of so many arguments.
+     The first blind man reached out and touched the side of the huge animal. "An elephant is smooth and solid like a wall!" he declared. "It must be very powerful."
+     The second blind man put his hand on the elephant's limber trunk. "An elephant is like a giant snake," he announced.
+     The third blind man felt the elephant's pointed tusk. "I was right," he decided. "This creature is as sharp and deadly as a spear."
+     The fourth blind man touched one of the elephant's four legs. "What we have here," he said, "is an extremely large cow."
+     The fifth blind man felt the elephant's giant ear. "I believe an elephant is like a huge fan or maybe a magic carpet that can fly over mountains and treetops," he said.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6wv-gC-4B8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6wv-gC-4B8" firstAttribute="bottom" secondItem="7Lr-4e-5lH" secondAttribute="bottom" id="0Ui-Rg-004"/>
+                            <constraint firstItem="6wv-gC-4B8" firstAttribute="bottom" secondItem="aKG-qf-Ytk" secondAttribute="bottom" constant="15" id="Hq0-Nc-SXa"/>
+                            <constraint firstItem="7Lr-4e-5lH" firstAttribute="top" secondItem="6wv-gC-4B8" secondAttribute="top" id="JPE-Qx-cuQ"/>
+                            <constraint firstItem="aKG-qf-Ytk" firstAttribute="top" secondItem="6wv-gC-4B8" secondAttribute="top" constant="15" id="Neg-Eo-0Gn"/>
+                            <constraint firstItem="6wv-gC-4B8" firstAttribute="trailing" secondItem="7Lr-4e-5lH" secondAttribute="trailing" id="SKT-CG-SAi"/>
+                            <constraint firstItem="7Lr-4e-5lH" firstAttribute="leading" secondItem="6wv-gC-4B8" secondAttribute="leading" id="Yd7-vg-brI"/>
+                            <constraint firstItem="aKG-qf-Ytk" firstAttribute="leading" secondItem="6wv-gC-4B8" secondAttribute="leading" constant="15" id="vaI-Yh-hzu"/>
+                            <constraint firstItem="6wv-gC-4B8" firstAttribute="trailing" secondItem="aKG-qf-Ytk" secondAttribute="trailing" constant="15" id="wFV-47-fZM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="y4U-Y7-eyS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmw-eH-3Ne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2666" y="948"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BTz-Pz-AXo">
+            <objects>
+                <viewController id="N3a-aE-Bgr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YlY-7C-LzI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ganesha and karthikeya" translatesAutoresizingMaskIntoConstraints="NO" id="LGr-dz-x20">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ganesha's Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pde-cF-7lc">
+                                <rect key="frame" x="15" y="106" width="345" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.54123711340000003" green="0.13370974839999999" blue="0.1121646806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="VwM-rR-ixq">
+                                <rect key="frame" x="15" y="145" width="345" height="618"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">
+     Lord Ganesha and his brother Lord Kartikeya often argued and fought with each other. One day, they stumbled upon a fruit in the forest and each wanted the fruit. When they reached Mount Kailash, their father Lord Shiva, recognized the fruit as a special kind that when eaten, bestows immortality and knowledge.
+
+     He told them that whoever could go around the universe thrice and come back to Mount Kailash the fastest, would get the fruit. Karthikeya quickly jumped onto his vehicle, the peacock, to fly around the universe. Ganesha, short and stout, realized he would never catch up on his mouse. So, he simply walked thrice around his father and mother. He told them that to him, they were his universe! Impressed by Ganesha's wit and wisdom, his father, Lord Shiva gave him the fruit.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aoN-vD-0Lj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aoN-vD-0Lj" firstAttribute="bottom" secondItem="LGr-dz-x20" secondAttribute="bottom" id="4SD-Cx-DXQ"/>
+                            <constraint firstItem="VwM-rR-ixq" firstAttribute="top" secondItem="pde-cF-7lc" secondAttribute="bottom" constant="15" id="4kr-HE-z5b"/>
+                            <constraint firstItem="LGr-dz-x20" firstAttribute="top" secondItem="aoN-vD-0Lj" secondAttribute="top" id="7ru-BA-UmR"/>
+                            <constraint firstItem="aoN-vD-0Lj" firstAttribute="trailing" secondItem="LGr-dz-x20" secondAttribute="trailing" id="BUg-n7-tpc"/>
+                            <constraint firstItem="aoN-vD-0Lj" firstAttribute="trailing" secondItem="VwM-rR-ixq" secondAttribute="trailing" constant="15" id="UNR-5K-Y4t"/>
+                            <constraint firstItem="pde-cF-7lc" firstAttribute="leading" secondItem="aoN-vD-0Lj" secondAttribute="leading" constant="15" id="UY4-mi-RuP"/>
+                            <constraint firstItem="aoN-vD-0Lj" firstAttribute="trailing" secondItem="pde-cF-7lc" secondAttribute="trailing" constant="15" id="Ybb-xr-pjS"/>
+                            <constraint firstItem="LGr-dz-x20" firstAttribute="leading" secondItem="aoN-vD-0Lj" secondAttribute="leading" id="ZEl-8K-pf8"/>
+                            <constraint firstItem="pde-cF-7lc" firstAttribute="top" secondItem="aoN-vD-0Lj" secondAttribute="top" constant="15" id="fqL-Ba-4VD"/>
+                            <constraint firstItem="VwM-rR-ixq" firstAttribute="leading" secondItem="aoN-vD-0Lj" secondAttribute="leading" constant="15" id="jSs-17-k7w"/>
+                            <constraint firstItem="aoN-vD-0Lj" firstAttribute="bottom" secondItem="VwM-rR-ixq" secondAttribute="bottom" constant="15" id="wT4-L4-eEU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tj0-sM-Nbs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S95-jM-H54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="233"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HmF-ce-spj">
+            <objects>
+                <viewController id="nrc-Id-ril" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPt-t5-cMM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snow-White-and-the-Seven-Dwarves" translatesAutoresizingMaskIntoConstraints="NO" id="iYQ-P1-zOo">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wmH-L6-heJ">
+                                <rect key="frame" x="15" y="145" width="345" height="575"/>
+                                <string key="text">     Once upon a time in the middle of winter, when the flakes of snow were falling like feathers from the clouds, a Queen sat at her palace window, which had an ebony black frame, stitching her husband’s shirts. While she was thus engaged and looking out at the snow she pricked her finger, and three drops of blood fell upon the snow. Now the red looked so well upon the white that she thought to herself, “Oh, that I had a child as white as this snow, as red as this blood, and as black as the wood of this frame!” Soon afterwards a little daughter came to her, who was as white as snow, and with cheeks as red as blood, and with hair as black as ebony, and from this she was named “Snow-White.” And at the same time her mother died.
+     About a year afterwards the King married another wife, who was very beautiful, but so proud and haughty that she could not bear anyone to be better-looking than herself. She owned a wonderful mirror, and when she stepped before it and said:
+     “Mirror, mirror on the wall, Who is the fairest of us all?”
+it replied:
+     “The Queen is the fairest of the day.”
+Then she was pleased, for she knew that the mirror spoke truly.
+     Little Snow-White, however, grew up, and became prettier and prettier, and when she was seven years old she was as fair as the noonday, and more beautiful than the Queen herself. When the Queen now asked her mirror:
+     “Mirror, mirror on the wall, Who is the fairest of us all?”</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBg-lO-26a">
+                                <rect key="frame" x="100" y="728" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NNn-Mf-sKt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Read More .."/>
+                                <connections>
+                                    <segue destination="CKg-g9-xjG" kind="show" id="aPl-QT-Cvo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snow White and the Seven Dwarfs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0f-v8-oeK">
+                                <rect key="frame" x="15" y="106" width="345" height="24"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.54123711340206193" green="0.13370974835881017" blue="0.11216468062795387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jQK-Bh-9jJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jQK-Bh-9jJ" firstAttribute="trailing" secondItem="wmH-L6-heJ" secondAttribute="trailing" constant="15" id="4Gs-6C-RKE"/>
+                            <constraint firstItem="jQK-Bh-9jJ" firstAttribute="trailing" secondItem="iYQ-P1-zOo" secondAttribute="trailing" id="5Sh-iJ-LWD"/>
+                            <constraint firstItem="iYQ-P1-zOo" firstAttribute="leading" secondItem="jQK-Bh-9jJ" secondAttribute="leading" id="AQp-9g-5a5"/>
+                            <constraint firstItem="yBg-lO-26a" firstAttribute="leading" secondItem="jQK-Bh-9jJ" secondAttribute="leading" constant="100" id="Dvx-t4-bHp"/>
+                            <constraint firstItem="iYQ-P1-zOo" firstAttribute="top" secondItem="jQK-Bh-9jJ" secondAttribute="top" id="KqK-ZY-YQL"/>
+                            <constraint firstItem="jQK-Bh-9jJ" firstAttribute="trailing" secondItem="B0f-v8-oeK" secondAttribute="trailing" constant="15" id="QON-xd-ah6"/>
+                            <constraint firstItem="yBg-lO-26a" firstAttribute="top" secondItem="wmH-L6-heJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Vve-ke-Goe"/>
+                            <constraint firstItem="jQK-Bh-9jJ" firstAttribute="bottom" secondItem="iYQ-P1-zOo" secondAttribute="bottom" id="dHw-Rg-Vgq"/>
+                            <constraint firstItem="jQK-Bh-9jJ" firstAttribute="trailing" secondItem="yBg-lO-26a" secondAttribute="trailing" constant="100" id="fGB-hN-dC3"/>
+                            <constraint firstItem="B0f-v8-oeK" firstAttribute="leading" secondItem="jQK-Bh-9jJ" secondAttribute="leading" constant="15" id="g12-UP-kQq"/>
+                            <constraint firstItem="wmH-L6-heJ" firstAttribute="leading" secondItem="jQK-Bh-9jJ" secondAttribute="leading" constant="15" id="gG7-BX-IMb"/>
+                            <constraint firstItem="wmH-L6-heJ" firstAttribute="top" secondItem="B0f-v8-oeK" secondAttribute="bottom" constant="15" id="oYr-cc-4RB"/>
+                            <constraint firstItem="B0f-v8-oeK" firstAttribute="top" secondItem="jQK-Bh-9jJ" secondAttribute="top" constant="15" id="pDf-Tc-uOb"/>
+                            <constraint firstItem="yBg-lO-26a" firstAttribute="bottom" secondItem="jQK-Bh-9jJ" secondAttribute="bottom" id="t7j-RP-5RG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y32-T5-ZGo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOn-rQ-Zzc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781.5999999999999" y="-494.33497536945816"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TTC-DD-HO0">
+            <objects>
+                <viewController id="CKg-g9-xjG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEd-Vd-sy9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow-white-prince" translatesAutoresizingMaskIntoConstraints="NO" id="TEN-2O-iNM">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xIB-SK-Re0">
+                                <rect key="frame" x="15" y="106" width="345" height="657"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">it replied:
+     “The Queen was fairest yesterday;
+     Snow-White is the fairest, now, they say.”
+     This answer so angered the Queen that she became quite yellow with envy. From that hour, whenever she saw Snow-White, her heart was hardened against her, and she hated the little girl. Her envy and jealousy increased so that she had no rest day or night, and she said to a Huntsman, “Take the child away into the forest. I will never look upon her again. You must kill her, and bring me her heart and tongue for a token.”
+The Huntsman listened and took the maiden away, but when he drew out his knife to kill her, she began to cry, saying, “Ah, dear Huntsman, give me my life! I will run into the wild forest, and never come home again.”
+     This speech softened the Hunter’s heart, and her beauty so touched him that he had pity on her and said, “Well, run away then, poor child.” But he thought to himself, “The wild beasts will soon devour you.” Still he felt as if a stone had been lifted from his heart, because her death was not by his hand. Just at that moment a young boar came roaring along to the spot, and as soon as he clapped eyes upon it the Huntsman caught it, and, killing it, took its tongue and heart and carried them to the Queen, for a token of his deed.
+     But now poor little Snow-White was left motherless and alone, and overcome with grief, she was bewildered at the sight of so many trees, and knew not which way to turn. She ran till her feet refused to go farther, and as it was getting dark, and she saw a little house near, she entered in to rest. In this cottage everything was very small, but very neat and elegant.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Iqu-8f-nrg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iqu-8f-nrg" firstAttribute="trailing" secondItem="xIB-SK-Re0" secondAttribute="trailing" constant="15" id="BNa-Z5-InE"/>
+                            <constraint firstItem="xIB-SK-Re0" firstAttribute="leading" secondItem="Iqu-8f-nrg" secondAttribute="leading" constant="15" id="Geb-M7-fzQ"/>
+                            <constraint firstItem="TEN-2O-iNM" firstAttribute="leading" secondItem="Iqu-8f-nrg" secondAttribute="leading" id="Hkl-Wd-mdw"/>
+                            <constraint firstItem="TEN-2O-iNM" firstAttribute="top" secondItem="Iqu-8f-nrg" secondAttribute="top" id="Kqc-TD-vHe"/>
+                            <constraint firstItem="xIB-SK-Re0" firstAttribute="top" secondItem="Iqu-8f-nrg" secondAttribute="top" constant="15" id="Sss-cG-zqn"/>
+                            <constraint firstItem="xIB-SK-Re0" firstAttribute="top" secondItem="Iqu-8f-nrg" secondAttribute="top" constant="15" id="lCx-cP-Ahf"/>
+                            <constraint firstItem="Iqu-8f-nrg" firstAttribute="trailing" secondItem="TEN-2O-iNM" secondAttribute="trailing" id="lZP-w9-cGN"/>
+                            <constraint firstItem="Iqu-8f-nrg" firstAttribute="bottom" secondItem="xIB-SK-Re0" secondAttribute="bottom" constant="15" id="nPx-Of-UW3"/>
+                            <constraint firstItem="Iqu-8f-nrg" firstAttribute="trailing" secondItem="xIB-SK-Re0" secondAttribute="trailing" constant="15" id="pZd-zg-du9"/>
+                            <constraint firstItem="Iqu-8f-nrg" firstAttribute="bottom" secondItem="TEN-2O-iNM" secondAttribute="bottom" id="unn-xc-hOq"/>
+                            <constraint firstItem="xIB-SK-Re0" firstAttribute="leading" secondItem="Iqu-8f-nrg" secondAttribute="leading" constant="15" id="wvA-m6-yic"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bwL-1t-bih"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4G9-aJ-0Ik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518" y="-494"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Grandma image" width="640" height="640"/>
+        <image name="Snow-White-and-the-Seven-Dwarves" width="1300" height="870"/>
+        <image name="blind-men-elephant" width="1280" height="835"/>
+        <image name="children" width="736" height="520"/>
+        <image name="elephant" width="1920" height="1006"/>
+        <image name="forest" width="1000" height="1000"/>
+        <image name="ganesha and karthikeya" width="685" height="647"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="sky" width="736" height="414"/>
+        <image name="snow-white-prince" width="1920" height="1200"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

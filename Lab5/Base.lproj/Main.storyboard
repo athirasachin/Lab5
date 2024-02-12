@@ -45,7 +45,18 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3OB-aw-ZhC">
                                 <rect key="frame" x="15" y="145" width="345" height="618"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">About UsAt Grandmma Stories, we believe in the magic of storytelling and its power to ignite young imaginations. Our mission is to provide a safe and enriching space where children can embark on exciting adventures, explore diverse worlds, and learn valuable life lessons through the joy of reading.Our StorytellersOur team of dedicated storytellers is passionate about crafting captivating tales that spark curiosity and inspire creativity. From whimsical fairy tales to thrilling adventures, each story is carefully written and beautifully illustrated to engage young readers and foster a love for storytelling.Story CategoriesExplore our wide range of story categories tailored to suit every child's interests:   Fairy Tales: Dive into a world of enchantment and wonder with classic fairy tales filled with magic and adventure.   Animal Tales: Journey into the animal kingdom and discover heartwarming stories featuring furry friends of all shapes and sizes.   Moral Lessons: Delve into stories that teach important life lessons on friendship, kindness, bravery, and more. Contact Us   Have a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us at grandmmastories@info.com and our team will be happy to assist you.          </mutableString>
+                                <mutableString key="text">About Us
+At Grandmma Stories, we believe in the magic of storytelling and its power to ignite young imaginations.      Level 1 stories aims at kids under the age of 6 whereas the level 2 aims at kids between 7 to 15.
+
+Story Categories
+Explore our wide range of story categories tailored to suit every child's interests:
+
+   Fairy Tales: Dive into a world of enchantment and wonder with classic fairy tales filled with magic and adventure.
+   Animal Tales: Journey into the animal kingdom and discover heartwarming stories featuring furry friends of all shapes and sizes.
+   Moral Lessons: Delve into stories that teach important life lessons on friendship, kindness, bravery, and more. 
+
+Contact Us
+   Have a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us at grandmmastories@info.com and our team will be happy to assist you.          </mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -162,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="he5-he-in7">
-                                <rect key="frame" x="0.0" y="91" width="375" height="559.66666666666663"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-Ee-RvL">
                                 <rect key="frame" x="100" y="291" width="175" height="50"/>
